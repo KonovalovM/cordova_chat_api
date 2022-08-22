@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <a id="open-menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </header>
+
+            <!-- Меню -->
+            <div id="menu">
+                <div class="info">
+                    <div class="avatar">
+                        <img src="img/users/6.png">
+                    </div>
+                    
+                    <h2>Иван</h2>
+                </div>
+                <ul>
+                    <li>
+                        Создать группу
+                    </li>
+                    <li class="contactsButton">
+                        Контакты
+                    </li>
+                    <li class="settingsButton">
+                        Настройки
+                    </li>
+                    <li class="logoutButton">
+                        Выход
+                    </li>
+                </ul>
+            </div>
+            <!-- /.Меню -->
+            <div id="window">
+                <!-- Главное окно -->
+                <div id="main">
+                    <ul>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/1.png">
+                            </div>
+                            <h2>Вика</h2>
+                        </li>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/2.png">
+                            </div>
+                            <h2>Павлик</h2>
+                        </li>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/3.png">
+                            </div>
+                            <h2>Катя</h2>
+                        </li>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/4.png">
+                            </div>
+                            <h2>Маша</h2>
+                        </li>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/5.png">
+                            </div>
+
+                            <h2>Аноним</h2>
+                        </li>
+                        <li>
+                            <div class="avatar">
+                                <img src="img/users/6.png">
+                            </div>
+
+                            <h2>Иван</h2>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.Главное окно -->
+
+                <!-- Чат -->
+                <div id="chat">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="img/users/6.png">
+                        </div>
+
+                        <h2>Иван</h2>
+                    </div>
+
+                    <div class="messages">
+                        <ul>
+                            <li class="left">
+                                <span class="clearfix">Привет</span>
+                            </li>
+                            <li class="right">
+                                <span>Привет</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="right">
+                                <span>Как дела?</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="left">
+                                <span>Отлично. Ты как?</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="right">
+                                <span>???</span>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="left">
+                                <span>-_-</span>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form">
+                        <form>
+                            <textarea></textarea>
+                            <button>
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.Чат -->
+
+                <!-- Настройки -->
+                <div id="settings">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="img/users/5.png">
+                        </div>
+
+                        <h2>Настройки</h2>
+                    </div>
+                    <div class="form">
+                        <form>
+                            <p>Телефон:<br/>
+                                <input type="text" placeholder="+380" value="+38 099 999 99 99">
+                            </p>
+                            <p>Пароль:<br/>
+                                <input type="password">
+                            </p>
+                            <p>
+                                <button>Сохранить</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.Настройки -->
+
+                <!-- Авторизация/регистрация -->
+                <div id="login">
+                    <div class="info">
+                        <div class="avatar">
+                            <img src="img/users/5.png">
+                        </div>
+
+                        <h2>Авторизация</h2>
+                    </div>
+
+                    <div class="form">
+                        <form>
+                            <p>Введите ваш телефон:<br/>
+                                <input type="text" placeholder="+380">
+                            </p>
+                            <p>Введите ваш пароль:<br/>
+                                <input type="password">
+                            </p>
+                            <p>
+                                <button>Войти</button>
+                            </p>
+                        </form>
+                        <p>
+                            Еще нет аккаунта? <a href="#">Регистрация</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- /.Авторизация/регистрация -->
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

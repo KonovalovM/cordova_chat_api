@@ -1,0 +1,331 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: #DAEFB3;
+}
+.app {
+    height: 100%;
+}
+header {
+    background: #EA9E8D;
+    border-bottom: 2px solid #D64550;
+    height: 26px;
+    padding: 7px 10px;
+}
+header a {
+    font-size: 24px;
+    color: #EEF4D4;
+}
+/*==================
+* MENU Block
+==================*/
+#menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #D64550;
+    height: 100%;
+    width: 90%;
+}
+#menu .info {
+    padding: 10px;
+    background: #EEF4D4;
+    height: 110px;
+    border-bottom: 2px solid #D64550;
+}
+#menu .info .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #D64550;
+    background: #daefb3;
+    margin: 0 auto;
+}
+#menu .info h2 {
+    text-align: center;
+    color: #D64550;
+    margin: 0;
+}
+#menu .info .avatar img {
+    width: 100%;
+    height: 100%;
+}
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu ul li {
+    color: #DAEFB3;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 2px solid #DAEFB3;
+}
+/*==================
+* MAIN Block
+====================*/
+#main {
+    /*display: none;*/
+}
+#main ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+#main ul li {
+    display: block;
+    height: 75px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #D64550;
+}
+#main ul li:last-child {
+    border-bottom: none;
+}
+#main ul li h2 {
+    margin: 0;
+    float: left;
+    margin-top: 25px; 
+}
+#main ul li .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #D64550;
+    background: #daefb3;
+    float: left;
+    margin-right: 10px;
+}
+#main ul li img {
+    width: 100%;
+    height: 100%;
+}
+/*==================
+* CHAT Block
+====================*/
+#chat {
+    height: calc(100% - 40px);
+    display: none;
+}
+
+#chat .info {
+    padding: 10px;
+    background: #EEF4D4;
+    height: 110px;
+    border-bottom: 2px solid #D64550;
+}
+#chat .info .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #D64550;
+    background: #daefb3;
+    margin: 0 auto;
+}
+#chat .info h2 {
+    text-align: center;
+    color: #D64550;
+    margin: 0;
+}
+#chat .info .avatar img {
+    width: 100%;
+    height: 100%;
+}
+#chat .messages {
+    height: calc(80% - 132px);
+}
+#chat .messages ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 0;
+}
+#chat .messages ul li {
+    min-height: 30px;
+    margin-bottom: 4px;
+    color: #D64550;
+}
+
+#chat .messages ul li.left span {
+    background: #EEF4D4;
+    padding: 10px;
+    float: left;
+    border-radius: 0 5px 5px 0;
+}
+
+#chat .messages ul li.right span {
+    background: #EEF4D4;
+    padding: 10px;
+    float: right;
+    border-radius: 5px 0 0 5px;
+}
+
+#chat .form {
+    height: 20%;
+    background: #EA9E8D;
+}
+#chat .form form {
+    height: calc(100% - 15px);
+    padding: 5px;
+    position: relative;
+}
+#chat .form textarea {
+    height: 100%;
+    width: 80%;
+    background: #eef4d4;
+    border: none;
+    outline: none;
+}
+
+#chat .form button {
+    outline: none;
+    border: none;
+    background: none;
+    color: #1C2826;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 20px);
+    right: 20px;
+}
+
+/*
+* LOGIN
+*/
+#login {
+    height: calc(100% - 40px);
+    display: none;
+}
+
+#login .info {
+    padding: 10px;
+    background: #EEF4D4;
+    height: 110px;
+    border-bottom: 2px solid #D64550;
+}
+#login .info .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #D64550;
+    background: #daefb3;
+    margin: 0 auto;
+}
+#login .info h2 {
+    text-align: center;
+    color: #D64550;
+    margin: 0;
+}
+#login .info .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+#login .form p {
+    text-align: center;
+    color: #1C2826;
+}
+#login .form input {
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+#login .form input:focus {
+    border: 1px solid #D64550;
+    padding: 7px 9px;
+}
+#login .form button {
+    border: none;
+    outline: none;
+    background: #d64550;
+    color: #eef4d4;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#login .form a {
+    color: #D64550;
+
+}
+
+/*=======================
+* SETTINGS Block
+=========================*/
+#settings {
+    height: calc(100% - 40px);
+    display: none;
+}
+
+#settings .info {
+    padding: 10px;
+    background: #EEF4D4;
+    height: 110px;
+    border-bottom: 2px solid #D64550;
+}
+#settings .info .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid #D64550;
+    background: #daefb3;
+    margin: 0 auto;
+}
+#settings .info h2 {
+    text-align: center;
+    color: #D64550;
+    margin: 0;
+}
+#settings .info .avatar img {
+    width: 100%;
+    height: 100%;
+}
+#settings .form p {
+    text-align: center;
+    color: #1C2826;
+}
+#settings .form input {
+    border: none;
+    outline: none;
+    margin-top: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+#settings .form input:focus {
+    border: 1px solid #D64550;
+    padding: 7px 9px;
+}
+#settings .form button {
+    border: none;
+    outline: none;
+    background: #d64550;
+    color: #eef4d4;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*=======================
+* HELPERS class
+=========================*/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
