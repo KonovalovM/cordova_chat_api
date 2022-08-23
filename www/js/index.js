@@ -68,13 +68,8 @@ var app = {
         ajax.open("GET", "http://chatapi.local/index.php?page=users", false);
         ajax.send();
 
-        //let qw = ajax.response;
-        //let res = [qw];
-        //console.log(JSON.parse(res));
-
         let response = JSON.parse(ajax.responseText);
         let users = response.users;
-        console.log(users);
 
         let mainContactsBlock = document.querySelector("#main ul");
         mainContactsBlock.innerText = "";
@@ -97,6 +92,7 @@ var app = {
 
         li.appendChild(div);
         li.appendChild(h2);
+        li.addEventListener("click", messages.showMessages.bind(user), false);
         return li;
     }
 
