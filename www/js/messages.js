@@ -2,7 +2,20 @@
 let messages = {
     
     initialize: function() {
-console.log("mess")
+        let formBlock = document.querySelector("#send-form");
+        formBlock.addEventListener("submit", this.sendMessage.bind(this), false);
+
+        let photoBtn = document.querySelector("#photo");
+        photoBtn.addEventListener('click', function (){
+           navigator.camera.getPicture(onSuccess, onFail, { quality:100, destinationType: Camera.DestinationType.FILE_URI });
+           function onSuccess(imageURI) {
+               let image = document.getElementById('#myImage');
+               image.src = imageURI;
+           }
+           function onFail(message){
+               alert("Error");
+           }
+        });
     },
     showMessages: function() {
         let user = this;
@@ -37,6 +50,26 @@ console.log("mess")
 
         let messageBlock = document.querySelector("#chat .messages ul");
         messageBlock.appendChild(li);
+    },
+
+    sendMessage: function (e) {
+        e.preventDefault();
+
+        let user_id_1 = document.querySelector("#send-form input[name='user_id_1']").value;
+        let user_id_2 = document.querySelector("#send-form input[name='user_id_2']").value;
+        let file = document.querySelector("#send-form input[name='file']").files[0];
+        let content = document.querySelector("#send-form textarea").value;
+
+        let data = new FormData();
+        data.append('file', file);
+        data.append('user_id_1', user_id_1);
+        data.append('user_id_2', user_id_2);
+        data.append('content', content);
+
+        let ajax = new XMLHttpRequest();
+        ajax.open("POST", "http://chatapi.local/api/messages.php?page=send", false);
+        ajax.send(data)
+        console.dir(ajax);
     }
 
 };
